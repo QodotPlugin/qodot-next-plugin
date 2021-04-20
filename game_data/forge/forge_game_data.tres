@@ -1,0 +1,490 @@
+[gd_resource type="Resource" load_steps=55 format=2]
+
+[ext_resource path="res://addons/qodot/src/gdnative/game_data/forge/forge_game_data.gdns" type="Script" id=1]
+[ext_resource path="res://addons/qodot/bin/qodot_gdnativelibrary.tres" type="GDNativeLibrary" id=2]
+
+[sub_resource type="NativeScript" id=1]
+class_name = "ForgeEntity"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=2]
+resource_name = "worldspawn"
+script = SubResource( 1 )
+class_type = 2
+metadata = [  ]
+classname = "worldspawn"
+description = ""
+properties = [  ]
+
+[sub_resource type="NativeScript" id=3]
+class_name = "ForgeEntity"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=4]
+resource_name = "detail"
+script = SubResource( 3 )
+class_type = 2
+metadata = [  ]
+classname = "detail"
+description = ""
+properties = [  ]
+
+[sub_resource type="NativeScript" id=5]
+class_name = "ForgeMetadata"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=6]
+resource_name = "Color"
+script = SubResource( 5 )
+metadata_type = 1
+base_classes = PoolStringArray(  )
+color = Color( 0.992157, 1, 0, 1 )
+bounding_box_min = Vector3( 0, 0, 0 )
+bounding_box_max = Vector3( 0, 0, 0 )
+metadata_type = 1
+color = Color( 0.992157, 1, 0, 1 )
+
+[sub_resource type="NativeScript" id=7]
+class_name = "ForgeMetadata"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=8]
+resource_name = "Size"
+script = SubResource( 7 )
+metadata_type = 2
+base_classes = PoolStringArray(  )
+color = Color( 1, 1, 1, 1 )
+bounding_box_min = Vector3( -8, -8, -8 )
+bounding_box_max = Vector3( 8, 8, 8 )
+metadata_type = 2
+bounding_box_min = Vector3( -8, -8, -8 )
+bounding_box_max = Vector3( 8, 8, 8 )
+
+[sub_resource type="NativeScript" id=9]
+class_name = "ForgeProperty"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=10]
+resource_name = "_color"
+script = SubResource( 9 )
+name = "_color"
+short_description = "Light color"
+long_description = ""
+property_type = 4
+integer_default = 0
+float_default = 0.0
+vector3_default = Vector3( 0, 0, 0 )
+string_default = ""
+color_default = Color( 1, 1, 1, 1 )
+choices = [  ]
+choice_default = 0
+flags = PoolStringArray(  )
+flags_default = 0
+name = "_color"
+short_description = "Light color"
+long_description = ""
+property_type = 4
+color_default = Color( 1, 1, 1, 1 )
+
+[sub_resource type="NativeScript" id=11]
+class_name = "ForgeChoice"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=12]
+resource_name = "Inverse distance falloff"
+script = SubResource( 11 )
+name = "Inverse distance falloff"
+choice_type = 0
+integer_value = 1
+float_value = 0.0
+string_value = ""
+integer_value = 1
+
+[sub_resource type="NativeScript" id=13]
+class_name = "ForgeChoice"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=14]
+resource_name = "Inverse distance squared"
+script = SubResource( 13 )
+name = "Inverse distance squared"
+choice_type = 0
+integer_value = 2
+float_value = 0.0
+string_value = ""
+integer_value = 2
+
+[sub_resource type="NativeScript" id=15]
+class_name = "ForgeChoice"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=16]
+resource_name = "Inverse distance squared B"
+script = SubResource( 15 )
+name = "Inverse distance squared B"
+choice_type = 0
+integer_value = 5
+float_value = 0.0
+string_value = ""
+integer_value = 5
+
+[sub_resource type="NativeScript" id=17]
+class_name = "ForgeChoice"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=18]
+resource_name = "Linear falloff (Default)"
+script = SubResource( 17 )
+name = "Linear falloff (Default)"
+choice_type = 0
+integer_value = 0
+float_value = 0.0
+string_value = ""
+integer_value = 0
+
+[sub_resource type="NativeScript" id=19]
+class_name = "ForgeChoice"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=20]
+resource_name = "Local minlight"
+script = SubResource( 19 )
+name = "Local minlight"
+choice_type = 0
+integer_value = 4
+float_value = 0.0
+string_value = ""
+integer_value = 4
+
+[sub_resource type="NativeScript" id=21]
+class_name = "ForgeChoice"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=22]
+resource_name = "No falloff"
+script = SubResource( 21 )
+name = "No falloff"
+choice_type = 0
+integer_value = 3
+float_value = 0.0
+string_value = ""
+integer_value = 3
+
+[sub_resource type="NativeScript" id=23]
+class_name = "ForgeProperty"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=24]
+resource_name = "delay"
+script = SubResource( 23 )
+name = "delay"
+short_description = "Attenuation"
+long_description = ""
+property_type = 5
+integer_default = 0
+float_default = 0.0
+vector3_default = Vector3( 0, 0, 0 )
+string_default = ""
+color_default = Color( 1, 1, 1, 1 )
+choices = [ SubResource( 12 ), SubResource( 14 ), SubResource( 16 ), SubResource( 18 ), SubResource( 20 ), SubResource( 22 ) ]
+choice_default = 0
+flags = PoolStringArray(  )
+flags_default = 0
+name = "delay"
+short_description = "Attenuation"
+long_description = ""
+property_type = 5
+choices = [ SubResource( 12 ), SubResource( 14 ), SubResource( 16 ), SubResource( 18 ), SubResource( 20 ), SubResource( 22 ) ]
+choice_default = 0
+
+[sub_resource type="NativeScript" id=25]
+class_name = "ForgeProperty"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=26]
+resource_name = "light"
+script = SubResource( 25 )
+name = "light"
+short_description = "Brightness"
+long_description = ""
+property_type = 0
+integer_default = 300
+float_default = 0.0
+vector3_default = Vector3( 0, 0, 0 )
+string_default = ""
+color_default = Color( 1, 1, 1, 1 )
+choices = [  ]
+choice_default = 0
+flags = PoolStringArray(  )
+flags_default = 0
+name = "light"
+short_description = "Brightness"
+long_description = ""
+property_type = 0
+integer_default = 300
+
+[sub_resource type="NativeScript" id=27]
+class_name = "ForgeProperty"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=28]
+resource_name = "mangle"
+script = SubResource( 27 )
+name = "mangle"
+short_description = "Spotlight angle"
+long_description = ""
+property_type = 2
+integer_default = 0
+float_default = 0.0
+vector3_default = Vector3( 0.005, 0, 0 )
+string_default = ""
+color_default = Color( 1, 1, 1, 1 )
+choices = [  ]
+choice_default = 0
+flags = PoolStringArray(  )
+flags_default = 0
+name = "mangle"
+short_description = "Spotlight angle"
+long_description = ""
+property_type = 2
+vector3_default = Vector3( 0.005, 0, 0 )
+
+[sub_resource type="NativeScript" id=29]
+class_name = "ForgeProperty"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=30]
+resource_name = "wait"
+script = SubResource( 29 )
+name = "wait"
+short_description = "Fade distance multiplier"
+long_description = ""
+property_type = 1
+integer_default = 0
+float_default = 0.0
+vector3_default = Vector3( 0, 0, 0 )
+string_default = ""
+color_default = Color( 1, 1, 1, 1 )
+choices = [  ]
+choice_default = 0
+flags = PoolStringArray(  )
+flags_default = 0
+name = "wait"
+short_description = "Fade distance multiplier"
+long_description = ""
+property_type = 1
+float_default = 0.0
+
+[sub_resource type="NativeScript" id=31]
+class_name = "ForgeEntity"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=32]
+resource_name = "light"
+script = SubResource( 31 )
+class_type = 1
+metadata = [ SubResource( 6 ), SubResource( 8 ) ]
+classname = "light"
+description = ""
+properties = [ SubResource( 10 ), SubResource( 24 ), SubResource( 26 ), SubResource( 28 ), SubResource( 30 ) ]
+
+[sub_resource type="NativeScript" id=33]
+class_name = "ForgeEntity"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=34]
+resource_name = "func_group"
+script = SubResource( 33 )
+class_type = 2
+metadata = [  ]
+classname = "func_group"
+description = "TrenchBroom group"
+properties = [  ]
+
+[sub_resource type="NativeScript" id=35]
+class_name = "ForgeEntity"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=36]
+resource_name = "illusionary"
+script = SubResource( 35 )
+class_type = 2
+metadata = [  ]
+classname = "illusionary"
+description = ""
+properties = [  ]
+
+[sub_resource type="NativeScript" id=37]
+class_name = "ForgeProperty"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=38]
+resource_name = "speed"
+script = SubResource( 37 )
+name = "speed"
+short_description = ""
+long_description = ""
+property_type = 1
+integer_default = 0
+float_default = 180.0
+vector3_default = Vector3( 0, 0, 0 )
+string_default = ""
+color_default = Color( 1, 1, 1, 1 )
+choices = [  ]
+choice_default = 0
+flags = PoolStringArray(  )
+flags_default = 0
+name = "speed"
+short_description = ""
+long_description = ""
+property_type = 1
+float_default = 180.0
+
+[sub_resource type="NativeScript" id=39]
+class_name = "ForgeProperty"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=40]
+resource_name = "axis"
+script = SubResource( 39 )
+name = "axis"
+short_description = ""
+long_description = ""
+property_type = 2
+integer_default = 0
+float_default = 0.0
+vector3_default = Vector3( 0, 1, 0 )
+string_default = ""
+color_default = Color( 1, 1, 1, 1 )
+choices = [  ]
+choice_default = 0
+flags = PoolStringArray(  )
+flags_default = 0
+name = "axis"
+short_description = ""
+long_description = ""
+property_type = 2
+vector3_default = Vector3( 0, 1, 0 )
+
+[sub_resource type="NativeScript" id=41]
+class_name = "ForgeEntity"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=42]
+script = SubResource( 41 )
+class_type = 1
+metadata = [  ]
+classname = "rotate_group"
+description = ""
+properties = [ SubResource( 38 ), SubResource( 40 ) ]
+
+[sub_resource type="NativeScript" id=43]
+class_name = "ForgeEntity"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=44]
+script = SubResource( 43 )
+class_type = 1
+metadata = [  ]
+classname = "origin"
+description = ""
+properties = [  ]
+
+[sub_resource type="NativeScript" id=45]
+class_name = "ForgeProperty"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=46]
+resource_name = "distance"
+script = SubResource( 45 )
+name = "distance"
+short_description = ""
+long_description = ""
+property_type = 1
+integer_default = 0
+float_default = 10.0
+vector3_default = Vector3( 0, 0, 0 )
+string_default = ""
+color_default = Color( 1, 1, 1, 1 )
+choices = [  ]
+choice_default = 0
+flags = PoolStringArray(  )
+flags_default = 0
+name = "distance"
+short_description = ""
+long_description = ""
+property_type = 1
+float_default = 10.0
+
+[sub_resource type="NativeScript" id=47]
+class_name = "ForgeProperty"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=48]
+resource_name = "axis"
+script = SubResource( 47 )
+name = "axis"
+short_description = ""
+long_description = ""
+property_type = 2
+integer_default = 0
+float_default = 0.0
+vector3_default = Vector3( 1, 0, 0 )
+string_default = ""
+color_default = Color( 1, 1, 1, 1 )
+choices = [  ]
+choice_default = 0
+flags = PoolStringArray(  )
+flags_default = 0
+name = "axis"
+short_description = ""
+long_description = ""
+property_type = 2
+vector3_default = Vector3( 1, 0, 0 )
+
+[sub_resource type="NativeScript" id=49]
+class_name = "ForgeProperty"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=50]
+resource_name = "speed"
+script = SubResource( 49 )
+name = "speed"
+short_description = ""
+long_description = ""
+property_type = 1
+integer_default = 0
+float_default = 10.0
+vector3_default = Vector3( 0, 0, 0 )
+string_default = ""
+color_default = Color( 1, 1, 1, 1 )
+choices = [  ]
+choice_default = 0
+flags = PoolStringArray(  )
+flags_default = 0
+name = "speed"
+short_description = ""
+long_description = ""
+property_type = 1
+float_default = 10.0
+
+[sub_resource type="NativeScript" id=51]
+class_name = "ForgeEntity"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=52]
+script = SubResource( 51 )
+class_type = 1
+metadata = [  ]
+classname = "move_group"
+description = ""
+properties = [ SubResource( 46 ), SubResource( 48 ), SubResource( 50 ) ]
+
+[resource]
+resource_name = "Qodot"
+script = ExtResource( 1 )
+name = "Qodot"
+includes = PoolStringArray(  )
+entities = [ SubResource( 2 ), SubResource( 4 ), SubResource( 32 ), SubResource( 34 ), SubResource( 36 ), SubResource( 42 ), SubResource( 44 ), SubResource( 52 ) ]
+save_as = "res://test.fgd"
+save_as = "res://test.fgd"

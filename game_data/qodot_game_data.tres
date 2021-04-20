@@ -1,0 +1,371 @@
+[gd_resource type="Resource" load_steps=50 format=2]
+
+[ext_resource path="res://addons/qodot/src/gdnative/game_data/qodot_game_data.gdns" type="Script" id=1]
+[ext_resource path="res://addons/qodot/bin/qodot_gdnativelibrary.tres" type="GDNativeLibrary" id=2]
+
+[sub_resource type="NativeScript" id=1]
+class_name = "BrushData"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=2]
+resource_name = "Brush Data"
+script = SubResource( 1 )
+visual_type = 1
+collision_type = 2
+
+[sub_resource type="NativeScript" id=3]
+class_name = "PointData"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=4]
+resource_name = "Point Data"
+script = SubResource( 3 )
+spawn_type = 0
+spawn_class_name = "StaticBody"
+spawn_prefab_scene = ""
+component_type = 0
+component_script = ""
+property_application = 1
+spawn_type = 0
+spawn_class_name = "StaticBody"
+component_type = 0
+property_application = 1
+
+[sub_resource type="NativeScript" id=5]
+class_name = "QodotEntity"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=6]
+resource_name = "worldspawn"
+script = SubResource( 5 )
+classname = "worldspawn"
+entity_type = 1
+point_data = SubResource( 4 )
+brush_data = SubResource( 2 )
+classname = "worldspawn"
+entity_type = 1
+point_data = SubResource( 4 )
+brush_data = SubResource( 2 )
+
+[sub_resource type="NativeScript" id=7]
+class_name = "BrushData"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=8]
+resource_name = "Brush Data"
+script = SubResource( 7 )
+visual_type = 1
+collision_type = 1
+
+[sub_resource type="NativeScript" id=9]
+class_name = "PointData"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=10]
+resource_name = "Point Data"
+script = SubResource( 9 )
+spawn_type = 0
+spawn_class_name = "StaticBody"
+spawn_prefab_scene = ""
+component_type = 0
+component_script = ""
+property_application = 0
+spawn_type = 0
+spawn_class_name = "StaticBody"
+component_type = 0
+property_application = 0
+
+[sub_resource type="NativeScript" id=11]
+class_name = "QodotEntity"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=12]
+resource_name = "detail"
+script = SubResource( 11 )
+classname = "detail"
+entity_type = 1
+point_data = SubResource( 10 )
+brush_data = SubResource( 8 )
+classname = "detail"
+entity_type = 1
+point_data = SubResource( 10 )
+brush_data = SubResource( 8 )
+
+[sub_resource type="NativeScript" id=13]
+class_name = "BrushData"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=14]
+resource_name = "Brush Data"
+script = SubResource( 13 )
+visual_type = 0
+collision_type = 0
+
+[sub_resource type="NativeScript" id=15]
+class_name = "PointData"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=16]
+resource_name = "Point Data"
+script = SubResource( 15 )
+spawn_type = 0
+spawn_class_name = "OmniLight"
+spawn_prefab_scene = ""
+component_type = 1
+component_script = "res://addons/qodot/game_data/entity_scripts/light.gd"
+property_application = 0
+spawn_type = 0
+spawn_class_name = "OmniLight"
+component_type = 1
+component_script = "res://addons/qodot/game_data/entity_scripts/light.gd"
+property_application = 0
+
+[sub_resource type="NativeScript" id=17]
+class_name = "QodotEntity"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=18]
+resource_name = "light"
+script = SubResource( 17 )
+classname = "light"
+entity_type = 0
+point_data = SubResource( 16 )
+brush_data = SubResource( 14 )
+classname = "light"
+entity_type = 0
+point_data = SubResource( 16 )
+
+[sub_resource type="Resource" id=19]
+resource_name = "func_group"
+script = SubResource( 5 )
+classname = "func_group"
+entity_type = 1
+point_data = SubResource( 4 )
+brush_data = SubResource( 2 )
+classname = "func_group"
+entity_type = 1
+point_data = SubResource( 4 )
+brush_data = SubResource( 2 )
+
+[sub_resource type="NativeScript" id=20]
+class_name = "BrushData"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=21]
+resource_name = "Brush Data"
+script = SubResource( 20 )
+visual_type = 1
+collision_type = 0
+
+[sub_resource type="NativeScript" id=22]
+class_name = "PointData"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=23]
+resource_name = "Point Data"
+script = SubResource( 22 )
+spawn_type = 0
+spawn_class_name = "Spatial"
+spawn_prefab_scene = ""
+component_type = 0
+component_script = ""
+property_application = 0
+spawn_type = 0
+spawn_class_name = "Spatial"
+component_type = 0
+property_application = 0
+
+[sub_resource type="NativeScript" id=24]
+class_name = "QodotEntity"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=25]
+resource_name = "illusionary"
+script = SubResource( 24 )
+classname = "illusionary"
+entity_type = 1
+point_data = SubResource( 23 )
+brush_data = SubResource( 21 )
+classname = "illusionary"
+entity_type = 1
+point_data = SubResource( 23 )
+brush_data = SubResource( 21 )
+
+[sub_resource type="NativeScript" id=26]
+class_name = "BrushData"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=27]
+resource_name = "Brush Data"
+script = SubResource( 26 )
+visual_type = 1
+collision_type = 1
+
+[sub_resource type="NativeScript" id=28]
+class_name = "PointData"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=29]
+resource_name = "Point Data"
+script = SubResource( 28 )
+spawn_type = 0
+spawn_class_name = "Node"
+spawn_prefab_scene = ""
+component_type = 1
+component_script = "res://rotate_group.gd"
+property_application = 0
+spawn_type = 0
+spawn_class_name = "Node"
+component_type = 1
+component_script = "res://rotate_group.gd"
+property_application = 0
+
+[sub_resource type="NativeScript" id=30]
+class_name = "QodotEntity"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=31]
+resource_name = "rotate_group"
+script = SubResource( 30 )
+classname = "rotate_group"
+entity_type = 0
+point_data = SubResource( 29 )
+brush_data = SubResource( 27 )
+classname = "rotate_group"
+entity_type = 0
+point_data = SubResource( 29 )
+
+[sub_resource type="NativeScript" id=32]
+class_name = "BrushData"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=33]
+resource_name = "Brush Data"
+script = SubResource( 32 )
+visual_type = 0
+collision_type = 0
+
+[sub_resource type="NativeScript" id=34]
+class_name = "PointData"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=35]
+resource_name = "Point Data"
+script = SubResource( 34 )
+spawn_type = 0
+spawn_class_name = ""
+spawn_prefab_scene = ""
+component_type = 0
+component_script = ""
+property_application = 0
+spawn_type = 0
+spawn_class_name = ""
+component_type = 0
+property_application = 0
+
+[sub_resource type="NativeScript" id=36]
+class_name = "QodotEntity"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=37]
+resource_name = "origin"
+script = SubResource( 36 )
+classname = "origin"
+entity_type = 0
+point_data = SubResource( 35 )
+brush_data = SubResource( 33 )
+classname = "origin"
+entity_type = 0
+point_data = SubResource( 35 )
+
+[sub_resource type="NativeScript" id=38]
+class_name = "BrushData"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=39]
+resource_name = "Brush Data"
+script = SubResource( 38 )
+visual_type = 0
+collision_type = 0
+
+[sub_resource type="NativeScript" id=40]
+class_name = "PointData"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=41]
+resource_name = "Point Data"
+script = SubResource( 40 )
+spawn_type = 0
+spawn_class_name = "Node"
+spawn_prefab_scene = ""
+component_type = 1
+component_script = "res://move_group.gd"
+property_application = 0
+spawn_type = 0
+spawn_class_name = "Node"
+component_type = 1
+component_script = "res://move_group.gd"
+property_application = 0
+
+[sub_resource type="NativeScript" id=42]
+class_name = "QodotEntity"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=43]
+resource_name = "move_group"
+script = SubResource( 42 )
+classname = "move_group"
+entity_type = 0
+point_data = SubResource( 41 )
+brush_data = SubResource( 39 )
+classname = "move_group"
+entity_type = 0
+point_data = SubResource( 41 )
+
+[sub_resource type="NativeScript" id=44]
+class_name = "QodotWorldspawnLayer"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=45]
+script = SubResource( 44 )
+texture = "*water0"
+spawn_type = 0
+spawn_class_name = "StaticBody"
+spawn_prefab_scene = ""
+component_type = 0
+component_script = ""
+visual_type = 1
+collision_type = 2
+texture = "*water0"
+spawn_type = 0
+spawn_class_name = "StaticBody"
+component_type = 0
+visual_type = 1
+collision_type = 2
+
+[sub_resource type="NativeScript" id=46]
+class_name = "QodotWorldspawnLayer"
+library = ExtResource( 2 )
+
+[sub_resource type="Resource" id=47]
+script = SubResource( 46 )
+texture = "*slime0"
+spawn_type = 0
+spawn_class_name = "StaticBody"
+spawn_prefab_scene = ""
+component_type = 0
+component_script = ""
+visual_type = 1
+collision_type = 2
+texture = "*slime0"
+spawn_type = 0
+spawn_class_name = "StaticBody"
+component_type = 0
+visual_type = 1
+collision_type = 2
+
+[resource]
+resource_name = "Qodot"
+script = ExtResource( 1 )
+entities = [ SubResource( 6 ), SubResource( 12 ), SubResource( 18 ), SubResource( 19 ), SubResource( 25 ), SubResource( 31 ), SubResource( 37 ), SubResource( 43 ) ]
+worldspawn_layers = [ SubResource( 45 ), SubResource( 47 ) ]

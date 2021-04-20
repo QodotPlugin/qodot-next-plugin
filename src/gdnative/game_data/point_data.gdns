@@ -1,0 +1,8 @@
+[gd_resource type="NativeScript" load_steps=2 format=2]
+
+[ext_resource path="res://addons/qodot/bin/qodot_gdnativelibrary.tres" type="GDNativeLibrary" id=1]
+
+[resource]
+class_name = "PointData"
+library = ExtResource( 1 )
+script_class_icon_path = "res://addons/qodot/icons/qodot_resource.svg"
