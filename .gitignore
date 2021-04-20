@@ -1,1 +1,7 @@
 *.import
+
+bin/win32
+bin/win64
+bin/linux32
+bin/linux64
+bin/osx
